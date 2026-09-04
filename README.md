@@ -11,10 +11,10 @@
 
 ## Example code
 
-``go
+```go
 import "github.com/koron/cmigemo-go"
 
-mo, err := cmigemo.Open("/usr/local/share/cmigemo/utf-8/migemo-dict)
+mo, err := cmigemo.Open("/usr/local/share/cmigemo/utf-8/migemo-dict")
 if err != nil {
 	panic(err.Error())
 }
@@ -27,4 +27,4 @@ if err != nil {
 	panic(err.Error())
 }
 m := rx.FindAllStringIndex("...")
-``
+```
