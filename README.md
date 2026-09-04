@@ -1,4 +1,4 @@
-# koron-go/cmigemo
+# koron/cmigemo-go
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/koron-go/cmigemo)](https://pkg.go.dev/github.com/koron-go/cmigemo)
 [![Actions/Go](https://github.com/koron-go/cmigemo/actions/workflows/go.yml/badge.svg)](https://github.com/koron-go/cmigemo/actions/workflows/go.yml)
