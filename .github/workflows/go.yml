@@ -36,6 +36,9 @@ jobs:
         while read -r path dir; do
           [ -z "$path" ] && continue
           name=$(basename "$path")
+          if [[ "$name" =~ ^v[1-9][0-9]*$ ]]; then
+            name=$(basename "$(dirname "$path")")
+          fi
           if [ -f "$dir/.norelease" ] ; then
             printf "Skipped %s\t(%s), due to %s/.norelease found\n" "$name" "$dir" "$dir"
           else
@@ -207,4 +210,4 @@ jobs:
         append_body: true
 
 # based on: github.com/koron-go/_skeleton/.github/workflows/go.yml
-# $Hash:d9888d55e91af5d4643232275f9012f4b0b2af2c76242dec977da670$
+# $Hash:73f33f49326938149baf451ff1ca1be3c58745717b6f9b9604fdbc01$
